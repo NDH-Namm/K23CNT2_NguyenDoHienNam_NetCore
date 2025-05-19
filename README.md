@@ -1,0 +1,2 @@
+# K23CNT2_NguyenDoHienNam_NetCore
+K23CNT2_NguyenDoHienNam_NetCore
