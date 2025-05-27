@@ -1,0 +1,61 @@
+﻿@model NdhnLab06.Models.NdhnEmployee
+
+@{
+    ViewBag.Title = "Thêm nhân viên mới";
+}
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<div class="container mt-5">
+    <h2 class="mb-4">@ViewData["Title"]</h2>
+
+    @using (Html.BeginForm("NdhnCreate", "NdhnEmployee", FormMethod.Post))
+    {
+        <!-- Họ tên -->
+        <div class="input-group mb-3">
+            <span class="input-group-text">Họ tên</span>
+            @Html.TextBoxFor(m => m.NdhnName, new { @class = "form-control", placeholder = "Nhập họ tên" })
+        </div>
+
+        <!-- Ngày sinh -->
+        <div class="input-group mb-3">
+            <span class="input-group-text">Ngày sinh</span>
+            @Html.TextBoxFor(m => m.NdhnBirthDay, "{0:yyyy-MM-dd}", new { @class = "form-control", type = "date" })
+        </div>
+
+        <!-- Email -->
+        <div class="input-group mb-3">
+            <span class="input-group-text">Email</span>
+            @Html.TextBoxFor(m => m.NdhnEmail, new { @class = "form-control", placeholder = "Nhập email", type = "email" })
+        </div>
+
+        <!-- Số điện thoại -->
+        <div class="input-group mb-3">
+            <span class="input-group-text">📞</span>
+            @Html.TextBoxFor(m => m.NdhnPhone, new { @class = "form-control", placeholder = "Nhập số điện thoại" })
+        </div>
+
+        <!-- Lương -->
+        <div class="input-group mb-3">
+            <span class="input-group-text">💰</span>
+            @Html.TextBoxFor(m => m.NdhnSalary, new { @class = "form-control", placeholder = "Nhập lương", type = "number" })
+            <span class="input-group-text">VNĐ</span>
+        </div>
+
+        <!-- Trạng thái -->
+        <div class="input-group mb-3">
+            <span class="input-group-text">Trạng thái</span>
+            <div class="form-control">
+                <label class="form-check-label me-3">
+                    @Html.RadioButtonFor(m => m.NdhnStatus, true) Đang làm
+                </label>
+                <label class="form-check-label">
+                    @Html.RadioButtonFor(m => m.NdhnStatus, false) Nghỉ việc
+                </label>
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Thêm mới</button>
+        <a href="@Url.Action("NdhnIndex")" class="btn btn-secondary ms-2">Quay lại</a>
+    }
+</div>

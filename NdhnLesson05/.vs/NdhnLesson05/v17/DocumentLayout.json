@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\K23CNT2_NguyenDoHienNam_NetCoreLearing\\K23CNT2_NguyenDoHienNam_NetCore\\NdhnLesson05\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{95C68802-7BA5-4C82-912C-0C85CCD7D9B1}|NdhnLesson05.csproj|c:\\k23cnt2_nguyendohiennam_netcorelearing\\k23cnt2_nguyendohiennam_netcore\\ndhnlesson05\\models\\datamodel\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95C68802-7BA5-4C82-912C-0C85CCD7D9B1}|NdhnLesson05.csproj|solutionrelative:models\\datamodel\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\K23CNT2_NguyenDoHienNam_NetCoreLearing\\K23CNT2_NguyenDoHienNam_NetCore\\NdhnLesson05\\Models\\DataModel\\HomeController.cs",
+              "RelativeDocumentMoniker": "Models\\DataModel\\HomeController.cs",
+              "ToolTip": "C:\\K23CNT2_NguyenDoHienNam_NetCoreLearing\\K23CNT2_NguyenDoHienNam_NetCore\\NdhnLesson05\\Models\\DataModel\\HomeController.cs",
+              "RelativeToolTip": "Models\\DataModel\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T02:04:17.026Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
