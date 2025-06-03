@@ -1,0 +1,71 @@
+﻿@model IEnumerable<NdhnLesson07.Models.NdhnEmployee>
+
+@{
+    ViewData["Title"] = "DANH SÁCH NHÂN VIÊN";
+}
+
+<h1>DANH SÁCH NHÂN VIÊN</h1>
+
+<p>
+    <a asp-action="NdhnCreate" class="btn btn-primary">Thêm mới</a>
+</p>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NdhnId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NdhnName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NdhnBirthDay)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NdhnEmail)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NdhnPhone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NdhnSalary)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NdhnStatus)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NdhnId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NdhnName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NdhnBirthDay)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NdhnEmail)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NdhnPhone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NdhnSalary)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NdhnStatus)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Ndhn  Edit", new { id = item.NdhnId }) |
+                    @Html.ActionLink("Details", "NdhnDetails", new { id = item.NdhnId }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
